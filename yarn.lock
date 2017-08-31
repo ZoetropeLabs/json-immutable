@@ -1733,10 +1733,6 @@ json-stable-stringify@^1.0.1:
   dependencies:
     jsonify "~0.0.0"
 
-json-stream-stringify@1.5.x:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/json-stream-stringify/-/json-stream-stringify-1.5.0.tgz#10068275eabd5ea2768cf67f185a1202acd73331"
-
 json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
