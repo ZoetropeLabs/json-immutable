@@ -17,7 +17,7 @@ function isSupportedNativeType(value) {
 
 
 function isDate(value) {
-  return (getObjectType(value) === 'Date')
+  return (getObjectType(value) === 'Date' || getObjectType(value) === 'XDate')
 }
 
 

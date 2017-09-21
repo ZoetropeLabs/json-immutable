@@ -1,6 +1,6 @@
 const debug = require('debug')('json-immutable')
 const immutable = require('immutable')
-
+const XDate = require('xdate')
 
 function deserialize(json, options = {}) {
   return JSON.parse(json, (key, value) => {
@@ -16,7 +16,7 @@ function revive(key, value, options) {
     } else if (value['__iterable']) {
       return reviveIterable(key, value, options)
     } else if (value['__date']) {
-      return new Date(value['__date'])
+      return new XDate(value['__date'])
     } else if (value['__regexp']) {
       const regExpParts = value['__regexp'].split('/')
       return new RegExp(regExpParts[1], regExpParts[2])
